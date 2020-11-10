@@ -1,0 +1,33 @@
+.todo-form{
+  @extend .default-box-shadow;
+  @include border-radius( 5px );
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #d3eafc;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: $app-max-width;
+  margin: 0 auto;
+  z-index: 1;
+
+  .todo-form-content{
+    resize: vertical;
+    max-height: 200px;
+    min-height: 40px;
+    flex-grow: 1;
+    padding: 0.5rem;
+  }
+
+  .todo-buttons{
+    display: inline-flex;
+    margin-left: 2rem;
+    align-items: center;
+  }
+
+  .clear{
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,37 @@
+.filter{
+  @include border-radius( 5px );
+  margin: 0.5rem 0;
+  flex-direction: column;
+  display: none;
+  background-color: #f3f3f3;
+  width: 600px;
+  padding: 0.5rem;
+  margin: auto;
+
+  &__active{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .container-counter{
+    font-size: 0.8rem;
+  }
+
+  .filter-buttons{
+
+    .btn{
+      margin-right: 0.25rem;
+
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+
+  .filter-active{
+    color: gold;
+    text-decoration: underline;
+  }
+}

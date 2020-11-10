@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>todo-ts</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="alert">
+        <div class="alert-message"></div>
+        <button class="alert-close empty-btn empty-btn__close"></button>
+      </div>
+      <form class="todo-form">
+        <textarea class="input todo-form-content" rows="1" name="content" placeholder="What needs to be done?"></textarea>
+        <div class="todo-buttons">
+          <button class="empty-btn empty-btn__save" type="submit"></button>
+          <button class="clear empty-btn empty-btn__clear" type="button" data-role="clear"></button>
+        </div>
+      </form>
+      <ul class="todo-list"></ul>
+      <div class="filter">
+        <span class="container-counter">
+          <span class="todo-counter"></span>
+          items left
+        </span>
+        <div class="filter-buttons"></div>
+        <button class="btn btn__secondary clear-completed" data-role="clear-completed">clear completed</button>
+      </div>
+      <div class="editor">
+        <form class="editor-form">
+          <button class="empty-btn empty-btn__close close-editor" data-role="close" type="button"></button>
+          <div class="form-row">
+            <textarea class="input editor-textarea" name="content" placeholder="content" rows="3"></textarea>
+          </div>
+          <div class="editor-buttons">
+            <button class="btn btn__secondary cancel" data-role="cancel" type="button">cancel</button>
+            <button class="btn btn__primary save" data-role="save" type="button">save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="dist/js/bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js" integrity="sha256-ar5bSkVmDS4cGm9DnZltimmnoaRyvhacMSGt5Re3qwU=" crossorigin="anonymous"></script>
+  </body>
+</html>

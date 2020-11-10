@@ -1,0 +1,25 @@
+.alert{
+  @extend .default-box-shadow;
+  @include border-radius( 5px );
+  position: fixed;
+  z-index: 2;
+  left: 2rem;
+  background: #ffeae8;
+  padding: 1rem;
+  width: 350px;
+  font-size: 1.3rem;
+  transition: $default-transition;
+  transform :translateY(-110%);
+
+  &.active{
+    transform :translateY( 1rem );
+  }
+
+  .alert-message{
+    margin-bottom: 0.5rem;
+  }
+
+  .alert-close{
+    float: right;
+  }
+}

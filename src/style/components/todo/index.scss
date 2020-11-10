@@ -1,0 +1,44 @@
+.todo{
+  @extend .default-box-shadow;
+  @include border-radius( 5px );
+  padding: 0.5rem;
+  margin-bottom: 0.7rem;
+
+  &__completed .todo-content{
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
+  .todo-navigation{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid $light-grey-color;
+    padding-bottom: 0.5rem;
+  }
+
+  .todo-date{
+    color: $grey-color;
+    margin-left: 2rem;
+  }
+
+  .container-buttons{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .todo-btn{
+    margin-left: 1rem;
+
+    &:first-child{
+      margin: 0;
+    }
+  }
+
+  .todo-content{
+    white-space: pre-line;
+    display: inline-block;
+    margin: 0.5rem 0 0;
+  }
+}

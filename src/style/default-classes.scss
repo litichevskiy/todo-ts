@@ -1,0 +1,141 @@
+.default-box-shadow{
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),
+              0 3px 1px -2px rgba(0,0,0,.2),
+              0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.form-row{
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.date{
+  white-space: pre;
+  font-size: 0.8rem;
+}
+
+/* inputs */
+
+.input{
+  @include border-radius( 3px );
+  width: 100%;
+  padding: 0.3rem 0.4rem;
+  font-size: inherit;
+  font-family: inherit;
+  border: 1px solid $light-grey-color;
+
+  &::placeholder{
+    color: $placeholder-color;
+  }
+}
+
+/* buttons */
+
+.empty-btn{
+  @extend .default-box-shadow;
+  @include border-radius( 3px );
+  border: 1px solid transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $btn-empty;
+  cursor: pointer;
+  width: 55px;
+  height: 35px;
+  background-size: 26px 26px;
+  transition: $default-transition;
+  transform: translateZ(0);
+
+  &:hover{
+    background-color :$btn-empty-hover;
+  }
+
+  &__close{
+    background-size: 20px 20px;
+    background-image: url(../images/icons/icon-close.svg);
+  }
+
+  &__edit{
+    background-image: url(../images/icons/icon-edit.svg);
+  }
+
+  &__delete{
+    background-image: url(../images/icons/icon-trash.svg);
+  }
+
+  &__clear{
+    background-image: url(../images/icons/icon-sweep.svg);
+  }
+
+  &__save{
+    background-image: url(../images/icons/icon-save.svg);
+  }
+}
+
+.btn{
+  @include border-radius( 3px );
+  border: none;
+  padding: 0.3rem 0.7rem;
+  font-size: inherit;
+  cursor: pointer;
+  color: inherit;
+  background: white;
+  transition: $default-transition;
+
+  &__primary, &__secondary{
+    color: white;
+  }
+
+  &__primary{
+    background: $btn-primary;
+
+    &:hover{
+      background: $btn-primary-hover;
+    }
+  }
+
+  &__secondary{
+    background: $btn-secondary;
+
+    &:hover{
+      background: $btn-secondary-hover;
+    }
+  }
+}
+
+/* checkbox */
+
+.check{
+  display: inline-flex;
+  position: relative;
+
+  .check-input{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect( 0 0 0 0 );
+  }
+
+  .check-box{
+    @extend .default-box-shadow;
+    @include border-radius( 5px );
+    display: inline-block;
+    width: 1.55rem;
+    height: 1.55rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: #ebe8e8;
+  }
+
+  .check-input:checked ~ .check-box{
+    background-color: $btn-primary;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/icons/icon-mark.svg);
+    background-size: 17px 17px;
+  }
+
+  .check-input:focus ~ .check-box{
+    border-color: $focus-color;
+  }
+}

@@ -1,0 +1,28 @@
+@media screen and ( max-width: 1250px ){
+  .todo-form{
+    width: 100%;
+  }
+}
+
+@media screen and ( max-width: 650px ){
+  .todo-form{
+    padding: $app-padding-small-devices;
+
+    .todo-buttons{
+      margin-left: 0.2rem;
+    }
+
+    .clear{
+      margin-left: 0.2rem;
+      display: none;
+    }
+
+    .empty-btn__save{
+      width: 70px;
+    }
+
+    .todo-form-content, .empty-btn__save{
+      min-height: 37px;
+    }
+  }
+}

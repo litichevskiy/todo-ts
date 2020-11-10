@@ -1,0 +1,32 @@
+{
+  "name": "todo-ts",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "webpack -p",
+    "dev": "webpack --watch & node server.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.0",
+    "clean-webpack-plugin": "0.1.19",
+    "css-loader": "^0.28.7",
+    "file-loader": "^6.2.0",
+    "localforage": "^1.9.0",
+    "mini-css-extract-plugin": "^1.3.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^4.0.4",
+    "sass-loader": "^7.1.0",
+    "scss-loader": "0.0.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 5 versions"
+  ]
+}

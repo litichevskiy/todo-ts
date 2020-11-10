@@ -1,0 +1,9 @@
+@media screen and ( max-width: 1250px ){
+  .editor{
+    padding: $app-padding-small-devices;
+
+    .editor-form{
+      width: 100%;
+    }
+  }
+}

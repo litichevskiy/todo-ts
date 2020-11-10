@@ -1,0 +1,10 @@
+export const ADDED_TODO: string = 'ADDED_TODO';
+export const EDIT_TODO: string = 'EDIT_TODO';
+export const UPDATED_QUANTITY_TODOS: string = 'UPDATED_QUANTITY_TODOS';
+export const CLEAR_COMPLETED_TODO: string = 'clear-completed';
+export const DELETE_COMPLETED_TODOS: string = 'DELETE_COMPLETED_TODOS';
+export const DELETED_COMPLETED_TODOS: string = 'DELETED_COMPLETED_TODOS';
+export const FILTER_CHANGED: string = 'FILTER_CHANGED';
+export const SHOW_ALERT_MESSAGE: string = 'SHOW_ALERT_MESSAGE';
+export const UPDATED_TODO: string = 'UPDATED_TODO';
+export const ESC_KEY: string = 'escape';

@@ -1,0 +1,13 @@
+.app{
+  font-family: 'Roboto', sans-serif;
+  color: $dark-color;
+  width: $app-max-width;
+  margin: auto;
+}
+
+@media screen and ( max-width: 1250px ){
+  .app{
+    width: 100%;
+    padding: $app-padding-small-devices;
+  }
+}

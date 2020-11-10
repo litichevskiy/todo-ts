@@ -1,0 +1,47 @@
+.editor{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+  background: rgba( 0,0,0,0.4 );
+
+  &.active{
+    display: flex;
+  }
+
+  .editor-form{
+    @extend .default-box-shadow;
+    @include border-radius( 5px );
+    background: white;
+    position: relative;
+    margin: auto;
+    width: 600px;
+    font-size: 1rem;
+    padding: 2.7rem 0.5rem 0.5rem;
+  }
+
+  .close-editor{
+    position: absolute;
+    top: 0.4rem;
+    right: 0.5rem;
+  }
+
+  .editor-textarea{
+    resize: vertical;
+    max-height: 200px;
+    min-height: 50px;
+  }
+
+  .editor-buttons{
+    text-align: right;
+
+    .btn{
+      margin-left: 0.5rem;
+
+      &:last-child{ margin: none; }
+    }
+  }
+}

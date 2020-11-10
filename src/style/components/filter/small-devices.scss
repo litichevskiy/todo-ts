@@ -1,0 +1,16 @@
+@media screen and ( max-width: 650px ){
+  .filter{
+    padding: $app-padding-small-devices;
+    width: 100%;
+    flex-direction: column;
+
+    .container-counter{
+      order: 1;
+      margin: 0.5rem 0;
+    }
+
+    .clear-completed{
+      order: 2;
+    }
+  }
+}

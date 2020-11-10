@@ -1,0 +1,11 @@
+@media screen and ( max-width: 650px ) {
+  .alert{
+    left: 1%;
+    width: 98%;
+    max-width: 350px;
+
+    &.active{
+      transform :translateY( 0 );
+    }
+  }
+}
