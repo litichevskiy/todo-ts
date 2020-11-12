@@ -22,7 +22,7 @@ const createTodo = ({ content, completed, id, date } :Todo) :HTMLLIElement => {
         <button class="todo-btn empty-btn empty-btn__delete" data-role="delete"></button>
       </div>
     </div>
-    <p class="todo-content">${content}</p>`;
+    <div class="todo-content">${content}</div>`;
 
   return li;
 };
