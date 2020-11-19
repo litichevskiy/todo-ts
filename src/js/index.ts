@@ -9,6 +9,7 @@ import TodoList from './components/TodoList';
 import Filters from './components/Filters';
 import Alert from './components/Alert';
 import TodoEditor from './components/TodoEditor';
+import '../images/favicon.png';
 
 const pubsub :PubSubType = new PubSub;
 const filters :string[] = Object.keys( filterBy );

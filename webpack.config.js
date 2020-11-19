@@ -39,7 +39,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: '../images/icons/',
+            outputPath: '../images/',
             limit: 1024,
             esModule: false
           }
