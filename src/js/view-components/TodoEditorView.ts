@@ -1,3 +1,4 @@
+import focusManager from 'focus-manager';
 import TodoEditorViewType from '../types/TodoEditorViewType';
 import getFormValues from '../utils/getFormValues';
 import { ESC_KEY } from '../constants';
@@ -29,6 +30,7 @@ class TodoEditorView implements TodoEditorViewType {
   }
 
   hideEditor = () :void => {
+    focusManager.release();
     this.container.classList.remove('active');
     document.removeEventListener('keydown', this.keyBoardHandler );
   }
@@ -36,6 +38,7 @@ class TodoEditorView implements TodoEditorViewType {
   showEditor = () :void => {
     this.container.classList.add('active');
     document.addEventListener('keydown', this.keyBoardHandler );
+    focusManager.capture( this.container, this.container.querySelector('.input') );
   }
 
   keyBoardHandler = ( event :KeyboardEvent ) :void => {
